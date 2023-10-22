@@ -1,6 +1,6 @@
-from pwl_tugas4 import models
-from pwl_tugas4.views.default import my_view
-from pwl_tugas4.views.notfound import notfound_view
+from pyramid_TugasIndividu4 import models
+from pyramid_TugasIndividu4.views.default import my_view
+from pyramid_TugasIndividu4.views.notfound import notfound_view
 
 
 def test_my_view_failure(app_request):
@@ -15,7 +15,7 @@ def test_my_view_success(app_request, dbsession):
     info = my_view(app_request)
     assert app_request.response.status_int == 200
     assert info['one'].name == 'one'
-    assert info['project'] == 'PWL-tugas4'
+    assert info['project'] == 'pyramid_Tugas Individu 4'
 
 def test_notfound_view(app_request):
     info = notfound_view(app_request)

@@ -13,6 +13,9 @@ requires = [
     'pyramid',
     'pyramid_jinja2',
     'pyramid_debugtoolbar',
+    'PyJWT',
+    'pyramid_jwt',
+    'pymysql',
     'waitress',
     'alembic',
     'pyramid_retry',
@@ -20,7 +23,6 @@ requires = [
     'SQLAlchemy',
     'transaction',
     'zope.sqlalchemy',
-    'PyJWT',
 ]
 
 tests_require = [
@@ -30,9 +32,9 @@ tests_require = [
 ]
 
 setup(
-    name='pwl_tugas4',
+    name='pyramid_TugasIndividu4',
     version='0.0',
-    description='PWL-tugas4',
+    description='pyramid Tugas Individu 4',
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
         'Programming Language :: Python',
@@ -53,10 +55,10 @@ setup(
     install_requires=requires,
     entry_points={
         'paste.app_factory': [
-            'main = pwl_tugas4:main',
+            'main = pyramid_TugasIndividu4:main',
         ],
         'console_scripts': [
-            'initialize_pwl_tugas4_db=pwl_tugas4.scripts.initialize_db:main',
+            'initialize_pyramid_TugasIndividu4_db=pyramid_TugasIndividu4.scripts.initialize_db:main',
         ],
     },
 )

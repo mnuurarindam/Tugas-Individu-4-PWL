@@ -1,6 +1,4 @@
 from pyramid.config import Configurator
-from pyramid.authorization import ACLAuthorizationPolicy
-
 
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
@@ -9,8 +7,7 @@ def main(global_config, **settings):
         config.include('pyramid_jinja2')
         config.include('.routes')
         config.include('.models')
-        config.set_authorization_policy(ACLAuthorizationPolicy())
         config.include('pyramid_jwt')
-        config.set_jwt_authentication_policy('secret')
+        config.add_request_method(lambda r: r.jwt_claims.get('sub'), 'userid', reify=True)
         config.scan()
     return config.make_wsgi_app()

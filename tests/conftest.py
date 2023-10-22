@@ -9,9 +9,9 @@ import pytest
 import transaction
 import webtest
 
-from pwl_tugas4 import main
-from pwl_tugas4 import models
-from pwl_tugas4.models.meta import Base
+from pyramid_TugasIndividu4 import main
+from pyramid_TugasIndividu4 import models
+from pyramid_TugasIndividu4.models.meta import Base
 
 
 def pytest_addoption(parser):
