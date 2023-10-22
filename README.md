@@ -1,7 +1,6 @@
 # Tugas Individu 4 PWL
 
-Nama : M Nuur Arinda M
-NIM : 120140145
+M Nuur Arinda M - 120140145
 
 ### 1. Clone Repository
 

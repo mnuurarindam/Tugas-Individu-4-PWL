@@ -55,10 +55,10 @@ setup(
     install_requires=requires,
     entry_points={
         'paste.app_factory': [
-            'main = pyramid_TugasIndividu4:main',
+            'main = tugasindividu4pwl:main',
         ],
         'console_scripts': [
-            'initialize_pyramid_TugasIndividu4_db=pyramid_TugasIndividu4.scripts.initialize_db:main',
+            'initialize_tugasindividu4pwl_db=tugasindividu4pwl.scripts.initialize_db:main',
         ],
     },
 )

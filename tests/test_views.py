@@ -1,6 +1,6 @@
-from pyramid_TugasIndividu4 import models
-from pyramid_TugasIndividu4.views.default import my_view
-from pyramid_TugasIndividu4.views.notfound import notfound_view
+from tugasindividu4pwl import models
+from tugasindividu4pwl.views.default import my_view
+from tugasindividu4pwl.views.notfound import notfound_view
 
 
 def test_my_view_failure(app_request):

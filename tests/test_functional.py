@@ -1,4 +1,4 @@
-from pyramid_TugasIndividu4 import models
+from tugasindividu4pwl import models
 
 def test_my_view_success(testapp, dbsession):
     model = models.MyModel(name='one', value=55)
