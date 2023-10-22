@@ -25,11 +25,11 @@ env/bin/pip install -e ".[testing]"
 ```
 ### Initialize and upgrade the database using Alembic.
 
-    ### Generate your first revision.
+Generate your first revision.
 ```bash
 env/bin/alembic -c development.ini revision --autogenerate -m "init"
 ```
-    Upgrade to that revision.
+Upgrade to that revision.
 ```bash
 env/bin/alembic -c development.ini upgrade head
 ```
